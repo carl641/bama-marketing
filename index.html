@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMA - Bama Marketing Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="container">
+      <!-- Logo -->
+      <a href="/" class="logo">
+        <span class="logo-text">BMA</span>
+        <span class="logo-subtext">Bama Marketing Agency</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/about" class="nav-link">About</a></li>
+
+        <!-- Services Dropdown -->
+        <li class="dropdown">
+          <button class="nav-link dropdown-trigger">
+            Services
+            <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="dropdown-panel">
+            <a href="/services/web-design" class="dropdown-link">Web Design</a>
+            <a href="/services/seo" class="dropdown-link">SEO</a>
+            <a href="/services/social-media" class="dropdown-link">Social Media</a>
+          </div>
+        </li>
+
+        <!-- Areas Dropdown -->
+        <li class="dropdown">
+          <button class="nav-link dropdown-trigger">
+            Areas We Serve
+            <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="dropdown-panel">
+            <a href="/areas/huntsville" class="dropdown-link">Huntsville</a>
+            <a href="/areas/birmingham" class="dropdown-link">Birmingham</a>
+            <a href="/areas/tuscaloosa" class="dropdown-link">Tuscaloosa</a>
+          </div>
+        </li>
+
+        <li><a href="/contact" class="contact-btn">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/about" class="mobile-nav-link">About</a>
+
+    <!-- Mobile Services Accordion -->
+    <div class="mobile-accordion">
+      <button class="mobile-accordion-header">
+        Services
+        <svg class="accordion-chevron" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mobile-accordion-content">
+        <a href="/services/web-design" class="mobile-accordion-link">Web Design</a>
+        <a href="/services/seo" class="mobile-accordion-link">SEO</a>
+        <a href="/services/social-media" class="mobile-accordion-link">Social Media</a>
+      </div>
+    </div>
+
+    <!-- Mobile Areas Accordion -->
+    <div class="mobile-accordion">
+      <button class="mobile-accordion-header">
+        Areas We Serve
+        <svg class="accordion-chevron" width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <div class="mobile-accordion-content">
+        <a href="/areas/huntsville" class="mobile-accordion-link">Huntsville</a>
+        <a href="/areas/birmingham" class="mobile-accordion-link">Birmingham</a>
+        <a href="/areas/tuscaloosa" class="mobile-accordion-link">Tuscaloosa</a>
+      </div>
+    </div>
+
+    <a href="/contact" class="mobile-contact-btn">Contact</a>
+  </div>
+
+  <!-- Sample content to demonstrate scroll behavior -->
+  <main class="main-content">
+    <section class="hero">
+      <h1>Welcome to Bama Marketing Agency</h1>
+      <p>Scroll down to see the header behavior change</p>
+    </section>
+    <section class="content-section">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+    <section class="content-section">
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </section>
+    <section class="content-section">
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+    <section class="content-section">
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
