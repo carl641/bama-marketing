@@ -95,6 +95,22 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', handleResize, { passive: true });
 
   // ===================================
+  // Hero Scroll Indicator
+  // ===================================
+
+  const scrollIndicator = document.querySelector('.hero-scroll-indicator');
+  if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
+      const hero = document.querySelector('.hero');
+      const heroHeight = hero.offsetHeight;
+      window.scrollTo({
+        top: heroHeight,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // ===================================
   // Keyboard navigation for dropdowns
   // ===================================
 
