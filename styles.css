@@ -886,6 +886,84 @@ ul {
 }
 
 /* ===================================
+   Why BMA Section
+   =================================== */
+
+.why-section {
+  background-color: var(--deep-forest-green);
+  padding: 5rem var(--container-padding);
+}
+
+.why-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-label-light {
+  color: var(--terracotta);
+}
+
+.why-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--warm-cream);
+  line-height: 1.2;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem 4rem;
+  }
+}
+
+.why-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.why-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--terracotta);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.why-content {
+  padding-top: 0.5rem;
+}
+
+.why-item-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--warm-cream);
+  margin-bottom: 0.75rem;
+}
+
+.why-item-text {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: rgba(247, 244, 237, 0.75);
+}
+
+/* ===================================
    Content Sections (Generic)
    =================================== */
 
