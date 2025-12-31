@@ -1274,3 +1274,443 @@ ul {
 .footer-divider {
   color: rgba(247, 244, 237, 0.4);
 }
+
+/* ===================================
+   Page Hero (Service Pages)
+   =================================== */
+
+.page-hero {
+  background-color: var(--warm-cream);
+  padding: calc(var(--header-height) + 3rem) var(--container-padding) 4rem;
+}
+
+.page-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb a {
+  color: var(--warm-gray);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--deep-forest-green);
+}
+
+.breadcrumb-separator {
+  color: var(--border-color);
+}
+
+.breadcrumb-current {
+  color: var(--deep-forest-green);
+  font-weight: 700;
+}
+
+.page-hero .section-label {
+  margin-bottom: 1.25rem;
+}
+
+.page-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.page-hero-subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.7;
+  color: var(--charcoal-brown);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===================================
+   Service Intro Section
+   =================================== */
+
+.service-intro-section {
+  background-color: var(--light-sand);
+  padding: 5rem var(--container-padding);
+}
+
+.service-intro-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .service-intro-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.service-intro-content {
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .service-intro-content {
+    order: 1;
+  }
+}
+
+.service-intro-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.service-intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.service-intro-text p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--charcoal-brown);
+}
+
+@media (min-width: 768px) {
+  .service-intro-text p {
+    font-size: 1.0625rem;
+  }
+}
+
+.service-intro-image {
+  order: 1;
+}
+
+@media (min-width: 1024px) {
+  .service-intro-image {
+    order: 2;
+  }
+}
+
+.service-intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================================
+   Capabilities Section
+   =================================== */
+
+.capabilities-section {
+  background-color: var(--warm-cream);
+  padding: 5rem var(--container-padding);
+}
+
+.capabilities-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.capabilities-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.capabilities-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  line-height: 1.2;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .capabilities-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.capability-card {
+  background-color: var(--light-sand);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.capability-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.capability-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--warm-cream);
+  border-radius: 12px;
+  margin-bottom: 1.25rem;
+  color: var(--deep-forest-green);
+}
+
+.capability-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  margin-bottom: 0.75rem;
+}
+
+.capability-description {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--charcoal-brown);
+}
+
+/* ===================================
+   Included Section (What You Get)
+   =================================== */
+
+.included-section {
+  background-color: var(--deep-forest-green);
+  padding: 5rem var(--container-padding);
+}
+
+.included-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.included-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.included-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--warm-cream);
+  line-height: 1.2;
+}
+
+.included-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .included-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 3rem;
+  }
+}
+
+.included-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.included-check {
+  flex-shrink: 0;
+  color: var(--terracotta);
+}
+
+.included-item span {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--warm-cream);
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .included-item span {
+    font-size: 1.0625rem;
+  }
+}
+
+/* ===================================
+   Pricing Section
+   =================================== */
+
+.pricing-section {
+  background-color: var(--warm-cream);
+  padding: 5rem var(--container-padding);
+}
+
+.pricing-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.pricing-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.pricing-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.pricing-subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--charcoal-brown);
+}
+
+@media (min-width: 768px) {
+  .pricing-subtitle {
+    font-size: 1.0625rem;
+  }
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.pricing-card {
+  background-color: var(--light-sand);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.pricing-card-featured {
+  background-color: var(--deep-forest-green);
+  border-color: var(--deep-forest-green);
+}
+
+.pricing-card-featured:hover {
+  box-shadow: 0 15px 40px rgba(45, 71, 57, 0.25);
+}
+
+.pricing-tier {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--deep-forest-green);
+  margin-bottom: 1.5rem;
+}
+
+.pricing-card-featured .pricing-tier {
+  color: var(--warm-cream);
+}
+
+.pricing-amount {
+  margin-bottom: 1.5rem;
+}
+
+.pricing-from {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--warm-gray);
+  margin-bottom: 0.25rem;
+}
+
+.pricing-card-featured .pricing-from {
+  color: rgba(247, 244, 237, 0.7);
+}
+
+.pricing-price {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--terracotta);
+}
+
+.pricing-card-featured .pricing-price {
+  color: var(--terracotta);
+}
+
+.pricing-description {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--charcoal-brown);
+}
+
+.pricing-card-featured .pricing-description {
+  color: rgba(247, 244, 237, 0.85);
+}
+
+.pricing-note {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--warm-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
