@@ -1851,3 +1851,55 @@ ul {
 .pricing-card-featured .pricing-period {
   color: rgba(247, 244, 237, 0.7);
 }
+
+/* ===================================
+   Capabilities Grid Variants
+   =================================== */
+
+.capabilities-grid-4 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .capabilities-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .capabilities-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.capabilities-note {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--warm-gray);
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+/* ===================================
+   Included Category Description
+   =================================== */
+
+.included-category-description {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: rgba(247, 244, 237, 0.85);
+}
+
+.included-category-wide {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .included-category-wide {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
